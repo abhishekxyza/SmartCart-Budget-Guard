@@ -1,0 +1,194 @@
+/* Updated Auth.css based on user-provided designs */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4169E1; /* Primary blue for registration background */
+  font-family: 'Inter', -apple-system, sans-serif;
+  padding: 20px;
+}
+
+/* Background variations */
+.auth-container.login-bg {
+  background-color: #f0f2f5; /* Light grey for login page background to contrast with card */
+}
+
+.auth-container.register-bg {
+  background-color: #4169E1;
+}
+
+/* Auth Card */
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Login Header with Gradient */
+.login-header {
+  background: linear-gradient(135deg, #4169E1 0%, #9370DB 100%);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.login-header h1 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Register Header */
+.register-header {
+  padding: 30px 30px 10px 30px;
+}
+
+.register-header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  display: inline-block;
+  position: relative;
+}
+
+.register-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #4169E1;
+}
+
+/* Form Body */
+.auth-form-body {
+  padding: 30px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.input-wrapper input:focus {
+  border-color: #4169E1;
+}
+
+.input-wrapper input::placeholder {
+  color: #999;
+}
+
+/* Options (Checkbox & Links) */
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.remember-me, .terms-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.remember-me input, .terms-check input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.forgot-pw, .signup-link-inline {
+  color: #4169E1;
+  text-decoration: none;
+}
+
+.forgot-pw:hover {
+  text-decoration: underline;
+}
+
+/* Submit Buttons */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-blue {
+  background-color: #4169E1;
+  color: white;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #4169E1 0%, #9370DB 100%);
+  color: white;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Footer Links */
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.auth-footer a {
+  color: #4169E1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Error Messages */
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-card {
+  animation: fadeIn 0.4s ease-out;
+}

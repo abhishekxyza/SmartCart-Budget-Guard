@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>New Order - SmartCart</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333">
+    <div
+      style="
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      "
+    >
+      <h2 style="color: #0f9d58">New Order Received!</h2>
+
+      <p>Hi SmartCart Owner,</p>
+
+      <p>A new order has been placed. Here are the details:</p>
+
+      <div
+        style="
+          background: #f9f9f9;
+          padding: 15px;
+          border-radius: 5px;
+          margin: 15px 0;
+        "
+      >
+        <p><strong>Customer:</strong> {{ customer_name }}</p>
+        <p><strong>Customer Email:</strong> {{ customer_email }}</p>
+        <p><strong>Order ID:</strong> {{ order_id }}</p>
+        <p><strong>Total Amount:</strong> Rs. {{ total_amount }}</p>
+        <p><strong>Shipping Address:</strong> {{ shipping_address }}</p>
+      </div>
+
+      <p>Please process this order at your earliest convenience.</p>
+
+      <p style="color: #888; font-size: 12px; margin-top: 30px">
+        This is an automated email. Please do not reply.
+      </p>
+    </div>
+  </body>
+</html>
